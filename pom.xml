@@ -11,6 +11,7 @@
         <module>eureka-server</module>
         <module>eureka-provider</module>
         <module>consumer-ribbon</module>
+        <module>consumer-feign</module>
     </modules>
 
     <packaging>pom</packaging>

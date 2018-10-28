@@ -1,13 +1,13 @@
 server:
-  port: 8080
+  port: 8080 #端口号
 
 spring:
   application:
-    name: eureka-provider
+    name: eureka-provider #服务名称 在消费者调用时需要
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost  #域名
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8888/eureka
+      defaultZone: http://${eureka.instance.hostname}:8888/eureka  #eureka的地址
 
