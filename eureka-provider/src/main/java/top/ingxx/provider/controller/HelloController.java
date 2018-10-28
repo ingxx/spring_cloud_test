@@ -1,4 +1,4 @@
-package top.ingxx.provider.Controller;
+package top.ingxx.provider.controller;
 
 
 import org.springframework.beans.factory.annotation.Value;
@@ -12,7 +12,7 @@ public class HelloController {
     private String port;
 
     @GetMapping("/sayHello")
-    public String sayHello(){
-        return "provider sayHello" + port;
+    public String sayHello(String name){
+        return "provider sayHello port:" + port + "  hello" + name;
     }
 }
